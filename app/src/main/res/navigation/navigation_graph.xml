@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.fitnessapp.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_eexsizeFragment"
+            app:destination="@id/eexsizeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eexsizeFragment"
+        android:name="com.example.fitnessapp.EexsizeFragment"
+        android:label="fragment_eexsize"
+        tools:layout="@layout/fragment_eexsize" >
+        <action
+            android:id="@+id/action_eexsizeFragment_to_wellDoneFragment"
+            app:destination="@id/wellDoneFragment"
+            app:popUpTo="@id/eexsizeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_eexsizeFragment_to_tryAgainFragment"
+            app:destination="@id/tryAgainFragment"
+            app:popUpTo="@id/eexsizeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wellDoneFragment"
+        android:name="com.example.fitnessapp.WellDoneFragment"
+        android:label="fragment_well_done"
+        tools:layout="@layout/fragment_well_done" >
+        <action
+            android:id="@+id/action_wellDoneFragment_to_eexsizeFragment"
+            app:destination="@id/eexsizeFragment"
+            app:popUpTo="@id/eexsizeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tryAgainFragment"
+        android:name="com.example.fitnessapp.TryAgainFragment"
+        android:label="fragment_try_again"
+        tools:layout="@layout/fragment_try_again" >
+        <action
+            android:id="@+id/action_tryAgainFragment_to_eexsizeFragment"
+            app:destination="@id/eexsizeFragment"
+            app:popUpTo="@id/eexsizeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.fitnessapp.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

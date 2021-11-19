@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FitnessAPP</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ex_text_view">%d times</string>
+    <string name="title_fitness_exercize"> Exercise Number:(%d/%d)</string>
+    <string name="ten_time">10 times</string>
+    <string name="str_value">NEXT</string>
+    <string name="stre_exit">EXIT</string>
+    <string name="content_dis">true</string>
+    <string name="str_go">GO</string>
+    <string name="next_work">Next Workout</string>
+    <string name="try_again">Try Again</string>
+    <string name="about">This is a Simple FitnessApp</string>
+    <string name="about_one">This is a Demo fitnessapp.\n\Created by==Rony Ahmed</string>
+    <string name="str_about">About</string>
+</resources>
